@@ -29,11 +29,11 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .card-container {
-  width: 400px;
+  max-width: 400px;
   background-color: white;
   border-radius: 5%;
   box-shadow: 0px 20px 80px 0px hsl(224, 23%, 55%);
@@ -54,7 +54,7 @@ body {
 }
 .inner-container p {
   margin: 0;
-  padding: 0 30px 0 30px;
+  padding: 0 clamp(5px, 2vw, 30px) 0 clamp(5px, 2vw, 30px);
   text-align: center;
   color: hsl(224, 23%, 55%);
   font-weight: 500;
@@ -78,7 +78,7 @@ body {
   margin-block: 20px;
   border-radius: 15px;
   box-sizing: border-box;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .inner-annual-plan {
@@ -132,7 +132,7 @@ button {
   border: none;
   background-color: hsl(245, 75%, 52%);
   font-weight: 700;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
   box-shadow: 0px 10px 20px -10px hsl(224, 23%, 55%);
 }
 
